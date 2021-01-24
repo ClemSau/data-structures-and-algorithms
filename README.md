@@ -4,4 +4,4 @@ This repository is a personal playground for learning and practicing data struct
 
 ## Table of content
 
-- [Letcode](leetcode-problems/README.md)
+- [Letcode](leetcode-problems)
