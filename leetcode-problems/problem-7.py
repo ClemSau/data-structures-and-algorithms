@@ -1,6 +1,7 @@
 # 7. Reversed Integer
 
-def reverse(x: int) -> int:
+class Solution:
+    def reverse(self, x: int) -> int:
         z = list(reversed(str(x)))
         if set(z) == set(['0']):
             return 0
@@ -19,9 +20,7 @@ def reverse(x: int) -> int:
         else:
             z = int(''.join(z[i:]))
             
-        if (-2**31 < z) and (z < 2**31 - 1):
+        if (-2**31 < z) and (z < 2**31 -1):
             return z
         
         return 0
-
-print(reverse(123))
