@@ -7,9 +7,11 @@ class Solution(object):
         :type words: List[str]
         :rtype: int
         """
-        count = 0
+        count = len(words)
         for word in words:
-            if set(word).issubset(set(allowed)):
-                count += 1
+            for letter in word:
+                if letter not in allowed:
+                    count -= 1
+                    break
         return count
         
